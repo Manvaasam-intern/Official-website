@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fontawsome links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap links -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <!-- custom css file link -->
+  <link href="/css/styles.css" rel="stylesheet">
+  <style>
+    .Product-heading {
+      text-align: center;
+    }
+
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::before {
+      content: "";
+      background-image: url('https://cdn.pixabay.com/photo/2021/05/27/14/56/field-6288341_960_720.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+
+    }
+
+    .hero .text {
+      z-index: 1;
+      font-size: 25px;
+      width: 70%;
+      text-align: center;
+      opacity: 1;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light text-dark  fixed-top "
+      style="background-color: #fff; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="#">
+          <img src="./images/manvaasam.jpg" height="50" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
+        </a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample"
+          aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./carousel.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./feature.html">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/job.html">Job </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/logistics.html">Logistics</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+
+          <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-link px-3 me-2">
+              Login
+            </button>
+            <button type="button" class="btn btn-success me-3">
+              Join with us
+            </button>
+            <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <main>
+    <header>
+      <div class="hero">
+        <div class="text">
+          <h2>Manvaasam Product</h2>
+          <p>
+            We produce many agricultural products and environment friendly products
+          </p>
+        </div>
+
+        <p>
+
+        </p>
+      </div>
+      <div class="category">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top"
+                alt="Hollywood Sign on The Hill" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
+                alt="Palm Springs Road" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a short card.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top"
+                alt="Los Angeles Skyscrapers" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
+                alt="Skyscrapers" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+  </main>
+
+  <footer class="text-center text-lg-start text-white mb-0 text-decoration-none" style="background-color: #c4ffc4">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4 text-dark" style="background-color: rgba(0, 0, 0, 0.2)">
+      <!-- Left -->
+      <div class="me-5 fw-bold">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="text-dark me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-dark me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-dark me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-dark me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-dark me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-dark me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-dark text-md-start mt-5 text-decoration-none">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase   fw-bold">Manvaasam</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              Bridging between agriculture and technology with young and talent minds
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="#!" class="text-dark">Fruits& Vegetable</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Organic oil</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Books</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Plants</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-1 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="#!" class="text-dark ">Logistics</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Gallery</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Jobs</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Communinty</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p><i class="fas fa-home mr-3"></i> #2/83,Melkumbu,
+              No.1.kothur(Vill& Post),
+              Kothur, Tamilnadu 635854, India
+            </p>
+            <p><i class="fas fa-envelope mr-3"></i> admin@manvaasam.org </p>
+            <p><i class="fas fa-phone mr-3"></i> 6380091001</p>
+
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+            <form action="">
+              <div class="form-outline mb-4">
+                <input type="email" id="form5Example25" class="form-control" />
+                <label class="form-label" for="form5Example25">Email address</label>
+              </div>
+              <button type="submit" class="btn btn-success mb-4">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Manvaasam.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+
+</html>
