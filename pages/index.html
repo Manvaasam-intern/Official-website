@@ -26,69 +26,56 @@
   <!-- custom css file link -->
   <link href="/css/HomepageStyle.css" rel="stylesheet">
   <link href="/css/GeneralStyle.css" rel="stylesheet">
+  <style>
+    a {
+      text-decoration: none;
+    }
+  </style>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light text-dark  fixed-top "
-      style="background-color: #fff; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-      <!-- Container wrapper -->
-      <div class="container">
-        <!-- Navbar brand -->
-        <a class="navbar-brand me-2" href="#">
-          <img src="/images/manvaasam.jpg" height="50" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
-        </a>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample"
-          aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarButtonsExample">
-          <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/Product.html">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/Gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/">Community</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/job.html">Job </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/logistics.html">Logistics</a>
-            </li>
-          </ul>
-          <!-- Left links -->
-
-          <div class="d-flex align-items-center">
-            <button type="button" class="btn btn-link px-3 me-2">
-              Login
-            </button>
-            <button type="button" class="btn btn-success me-3">
-              Join with us
-            </button>
-            <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
-                class="fab fa-github"></i></a>
-          </div>
-        </div>
-        <!-- Collapsible wrapper -->
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>Ninestars</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
-      <!-- Container wrapper -->
-    </nav>
-    <!-- Navbar -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="fa-solid fa-angle-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="fa-solid fa-bars mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
   </header>
   <main>
     <!-- Carousel wrapper -->
@@ -148,61 +135,195 @@
 
     </section>
     <!-- Carousel wrapper -->
-    <section class="services container-fluid m-6">
-      <h3 class="text-center section-headings" data-aos="fade-up" data-aos-duration="3000">Our Services</h3>
-      <p></p>
-      <div class="row service-list">
-        <div class="col  col-md-2  col-sm-12 col-xs-auto   service" data-aos="fade-left" data-aos-easing="linear"
-          data-aos-duration="1500">
-          <i class="fa-solid fa-people-roof service-icon"></i>
-          <h4>Social</h4>
-          <p>Creating infrastructure in agriculture by uplifting Farmers life</p>
+    <section class="services">
+      <div class="container">
+        <div class="section-header">
+          <span>Our services</span>
+          <h2>Our Services</h2>
+
         </div>
-        <div class="col  col-md-2  col-sm-12  col-xs-auto service" data-aos="fade-up" data-aos-easing="linear"
-          data-aos-duration="1500">
-          <i class="fa-solid fa-seedling service-icon"></i>
-          <h4>Environmental</h4>
-          <p>Green Environment everywhere by providing Landscaping & Gardening Service</p>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+              <h4 class="title"><a href=""> Environmental</a></h4>
+              <p class="description">To plant 1 lakh trees in all districts of Tamilnadu. Constructing small Lakes,
+                Ponds to save
+                nature, plant nurseries and to save the environment.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-cyan">
+              <div class="icon"><i class="fa-duotone fa-user-group"></i></div>
+              <h4 class="title"><a href="">Social</a></h4>
+              <p class="description">The motto of MANVAASAM is to create infrastructure in agriculture and uplift the
+                farmers' lives
+                by providing a monthly salary. Creating awareness among students via online & offline
+                activities</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-pink">
+              <div class="icon"><i class="fa-solid fa-gears"></i></div>
+              <h4 class="title"><a href="">Technical</a></h4>
+              <p class="description">We create softwares (Website,Mobile application,etc) to solve social & business
+                problems,We develop website and mobile application,Logo and poster creations</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-blue">
+              <div class="icon"><i class="fa-sharp fa-solid fa-bullseye-arrow"></i></div>
+              <h4 class="title"><a href="">Training</a></h4>
+              <p class="description">We provide technical training to students at minimum cost via online mode/offline
+                mode.
+                Demo Interview,Online training courses,Webinars and many more
+              </p>
+            </div>
+          </div>
+
         </div>
-        <div class="col  col-md-2  col-sm-12  col-xs-auto service" data-aos="fade-up" data-aos-easing="linear"
-          data-aos-duration="1500">
-          <i class="fa-sharp fa-solid fa-gears service-icon"></i>
-          <h4>Technical</h4>
-          <p>Research and Software Development Service</p>
-        </div>
-        <div class="col  col-md-2  col-sm-12 col-xs-auto service" data-aos="fade-right" data-aos-easing="linear"
-          data-aos-duration="1500">
-          <i class="fa-solid fa-person-chalkboard service-icon"></i>
-          <h4>Training</h4>
-          <p>Manvaasam Community Services,Awareness programs</p>
-        </div>
+
       </div>
     </section>
-    <section class="about-us container-fluid m-6">
-      <div class="row ">
-        <div class="col" data-aos="zoom-in-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-          <h5 class="about-title" data-aos="fade-up" data-aos-duration="3000">About us</h5>
-          <p class="typewriter"> Seeds Of Hope</p>
-          <p class="about-content">
-            <span class="first-word">Manvaasam</span> was started by a group of Farmers, Students and working
-            professionals as an organization, which is involved in Social, Environmental, Training and
-            Technical Activities.We are dedicated to the development of
-            farming, environmental protection and
-            environmental improvements which will
-            strengthen sustainable future and lead towards
-            social and economic improvements of the
-            social communities at national level
-          </p>
-          <button class="btn btn-success"><a>See More</a></button>
+    <section class="about" data-aos="fade-up">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="/images/farmer.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h3>About us.</h3>
+            <p> Manvaasam is dedicated to the development of
+              farming, environmental protection and
+              environmental improvements which will
+              strengthen sustainable future and lead towards
+              social and economic improvements of the
+              social communities at national level. In order to
+              achieve this MANVAASAM is committed to work
+              in different range of projects.Manvaasam is
+              trying to change and develop our society in a
+              step by step process. We are delighted to say
+              that we have active volunteers all over the
+              TamilNadu</p>
+          </div>
         </div>
-        <div class="col  " data-aos="zoom-in-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-          <img src="/images/home_1.jpg" class="img-fluid">
-        </div>
+
       </div>
     </section>
-    <section class="features container-fluid m-6">
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Frequently Asked Questions</span>
+          <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
+                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
+                    Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
+                    Purus gravida quis blandit turpis cursus in
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--  <section class="features container-fluid m-6">
       <h5 class="section-headings" data-aos="fade-up" data-aos-duration="3000">Our Features</h5>
-      <!-- Gallery -->
+   
       <div class="row ">
         <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
           <div class="img-container">
@@ -251,70 +372,17 @@
         </div>
 
       </div>
-      <!-- Gallery -->
-    </section>
-    <section class="faq">
-      <h2 class="section-headings" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">FAQ</h2>
-      <h1>We solve all your quires</h1>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header faq-question" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              Item #1
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in felis dignissim, imperdiet nulla
-              vitae, condimentum nulla. Ut scelerisque a nisl sit amet facilisis. Etiam blandit iaculis tellus, vitae
-              condimentum leo congue a. Vivamus in vehicula massa. Pellentesque libero libero, commodo lacinia volutpat
-              non, tincidunt at lectus. Maecenas ipsum turpis, viverra vitae lacus eu, fringilla ultricies erat. Aenean
-              hendrerit maximus sodales.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header faq-question" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Item #2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Quisque sapien augue, ornare id leo a, tristique elementum justo. Praesent non nulla sagittis,
-              sollicitudin justo id, varius erat. Nunc sed pharetra nisl. Cras et suscipit felis, in lacinia sapien.
-              Integer venenatis sagittis massa, eu eleifend nibh venenatis in. Pellentesque a aliquet urna. Curabitur
-              tortor metus, ultrices sed mi at, sagittis imperdiet turpis. Suspendisse nec luctus nunc. Fusce in arcu
-              quis lacus mollis ultrices.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header faq-question" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Item #3
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Praesent nec ipsum scelerisque dui condimentum pellentesque eu at lectus. Vivamus purus purus, bibendum in
-              vestibulum ac, pharetra sit amet sapien. Nunc luctus, orci vel luctus cursus, nibh nisl ullamcorper ipsum,
-              eu malesuada arcu augue id nisi. In auctor mi ac ante tincidunt tincidunt.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
+    </section>-->
+
     <section class="testimonial ">
-      <!-- Carousel wrapper -->
-      <h2 class="section-headings" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Testimonial</h2>
-      <h1>What our clients say about us</h1>
+      <div class="section-header">
+        <span>Testimonial</span>
+        <h2>Testimonial</h2>
+
+      </div>
+      <!-- <h2 class="section-headings" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Testimonial</h2>
+      <h1>What our clients say about us</h1> -->
       <div class="container p-5">
 
         <div class="slider">
@@ -368,13 +436,14 @@
       </div>
 
     </section>
-    <!-- Carousel wrapper -->
+
     </section>
     </section>
 
 
+    -->
+    <div style="padding-top:20rem ;background-color: red;"></div>
   </main>
-
 
   <!-- Remove the container if you want to extend the Footer to full width. -->
 

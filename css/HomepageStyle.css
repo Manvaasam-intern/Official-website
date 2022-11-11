@@ -39,6 +39,14 @@
   .carousel-control-prev {
     margin-left: -3rem;
   }
+  .ombre-interne {
+    padding: 2rem;
+  }
+  .carousel-item img {
+    height: 20rem;
+
+    border-radius: 10px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -48,6 +56,14 @@
 
   .carousel-control-prev {
     margin-left: -3rem;
+  }
+  .ombre-interne {
+    padding: 3rem;
+  }
+  .carousel-item img {
+    height: 30rem;
+
+    border-radius: 10px;
   }
 }
 
@@ -59,6 +75,9 @@
   .carousel-control-prev {
     margin-left: -4rem;
   }
+  .ombre-interne {
+    padding: 4rem;
+  }
 }
 
 @media only screen and (min-width: 959px) {
@@ -69,50 +88,125 @@
   .carousel-control-prev {
     margin-left: -7rem;
   }
+  .ombre-interne {
+    padding: 5rem;
+  }
 }
 /*************CAROUSEL SECTION  END *************/
 /************* SERVICE SECTION START *********/
-.service-list {
-  padding: 6rem;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  line-height: 2;
+.services {
+  padding-bottom: 20px;
 }
-.service {
+
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  background: #fff;
+  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+  transition: all 0.3s ease-in-out;
   text-align: center;
-  padding: 1.5rem 0.3rem 1.5rem 0.3rem;
-  margin: 0.5rem;
-  /* width: 80%; */
-  border: 0.5px solid rgb(214, 214, 214);
-  border-radius: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  transition: all 200ms ease-in;
+  border: 1px solid #fff;
 }
-.service i {
-  color: #036a08;
-  font-size: 40px;
+
+.services .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 17px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
+
+.services .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #111;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.services .icon-box-pink .icon {
+  background: #fceef3;
+}
+
+.services .icon-box-pink .icon i {
+  color: #ff689b;
+}
+
+.services .icon-box-pink:hover {
+  border-color: #ff689b;
+}
+
+.services .icon-box-cyan .icon {
+  background: #e6fdfc;
+}
+
+.services .icon-box-cyan .icon i {
+  color: #3fcdc7;
+}
+
+.services .icon-box-cyan:hover {
+  border-color: #3fcdc7;
+}
+
+.services .icon-box-green .icon {
+  background: #eafde7;
+}
+
+.services .icon-box-green .icon i {
+  color: #41cf2e;
+}
+
+.services .icon-box-green:hover {
+  border-color: #41cf2e;
+}
+
+.services .icon-box-blue .icon {
+  background: #e1eeff;
+}
+
+.services .icon-box-blue .icon i {
+  color: #2282ff;
+}
+
+.services .icon-box-blue:hover {
+  border-color: #2282ff;
 }
 
 /************* SERVICE SECTION END *********/
 
 /************* ABOUT US SECTION START *********/
-.about-us {
-  background-color: #e8ffe8;
-  padding: 7rem;
-}
-.about-title {
-  font-size: 2.7rem;
+.about h3 {
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5;
+  color: #088226;
   font-weight: 700;
-  margin-bottom: 3rem;
 }
-.about-content {
+.about p {
+  font-size: 20px;
   line-height: 1.5;
-  font-size: 1.2rem;
 }
-.first-word {
-  font-weight: 500;
+.about p:last-child {
+  margin-bottom: 0;
 }
 /************* ABOUT US SECTION END *********/
 
@@ -157,13 +251,58 @@
 
 /************* FAQ  SECTION START *********/
 .faq {
-  background-color: #e8ffe8;
+  padding-top: 80px;
 }
-.accordion {
-  padding: 5rem;
+
+.faq .accordion-item {
+  border: 0;
+  margin-bottom: 10px;
 }
-.faq-question {
-  background-color: #104323;
+
+.faq .accordion-collapse {
+  border: 0;
+}
+
+.faq .accordion-button {
+  padding: 15px 30px 20px 60px;
+  font-weight: 600;
+  border: 0;
+  font-size: 18px;
+  color: var(--color-default);
+  text-align: left;
+  background: rgba(14, 29, 52, 0.03);
+  border-radius: 5px;
+}
+
+.faq .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  color: var(--color-primary);
+  border-bottom: 0;
+  box-shadow: none;
+}
+
+.faq .question-icon {
+  position: absolute;
+  top: 14px;
+  left: 25px;
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+.faq .accordion-button:after {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.faq .accordion-body {
+  padding: 0 30px 25px 60px;
+  border: 0;
+  background: rgba(14, 29, 52, 0.03);
+  border-radius: 5px;
 }
 /************* FAQ  SECTION END *********/
 
@@ -464,5 +603,20 @@
     text-align-last: center;
     padding: 3px 0;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  #footer {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+@media only screen and (min-width: 959px) {
 }
 /************* FOOTER  SECTION END *********/

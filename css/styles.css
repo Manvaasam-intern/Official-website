@@ -1,3 +1,6 @@
+body {
+  background-color: pink;
+}
 .service-list {
   padding: 4rem;
   display: flex;
