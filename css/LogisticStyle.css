@@ -14,3 +14,8 @@
     top: 0px;
   }
 }
+@media only screen and (max-width: 600px) {
+  #moving {
+    display: none;
+  }
+}
