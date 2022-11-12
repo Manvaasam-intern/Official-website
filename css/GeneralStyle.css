@@ -26,7 +26,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #001973;
+  color: green;
   position: relative;
   z-index: 2;
   margin-bottom: 20px;
@@ -50,7 +50,7 @@
 .section-header span {
   position: absolute;
   top: 46px;
-  color: rgba(14, 29, 52, 0.06);
+  color: rgba(14, 52, 24, 0.06);
   left: 0;
   right: 0;
   z-index: 1;
