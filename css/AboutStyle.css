@@ -210,12 +210,12 @@
 .service-details .card:hover .card-body .card-title a {
   color: #0a6315;
 }
-.facts {
-  margin: 4rem;
-  padding: 3rem;
+.fact {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .counter {
-  background-color: #f5f5f5;
+  background-color: #d5ffde;
 
   border-radius: 5px;
 }
@@ -224,6 +224,10 @@
   border: 0.5px solid rgb(28, 252, 28);
   margin: 10px;
   padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   border-radius: 10px;
   transition: transform 0.2s ease-out;
 }
@@ -238,7 +242,7 @@
   text-align: center;
 }
 
-.count-text {
+.count-value {
   font-size: 30px;
   font-weight: normal;
 
@@ -315,4 +319,18 @@
 
 .about p:last-child {
   margin-bottom: 0;
+}
+.enquiry-form .card {
+  background-color: rgb(29, 168, 29);
+  color: #fff;
+}
+.enquiry-form .card label {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.enquiry-form .card .btn-send {
+  background-color: rgba(248, 255, 248, 0.941);
+  color: #0a6315;
+  font-weight: 500;
+  font-size: 20px;
 }
