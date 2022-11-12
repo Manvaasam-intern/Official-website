@@ -9,6 +9,9 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Bootstrap links -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -24,31 +27,22 @@
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"></script>
 
-  <!-- fancy box links -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
   <!-- custom css file link -->
-  <link href="/css/styles.css" rel="stylesheet">
-  <style type="text/css">
-    .item {
-      transition: .5s ease-in-out;
-    }
 
-    .item:hover {
-      filter: brightness(80%);
+  <link href="/css/GeneralStyle.css" rel="stylesheet">
+
+  <style>
+    a {
+      text-decoration: none;
     }
   </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
+
 <body>
   <header>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light text-dark  fixed-top "
       style="background-color: #fff; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
       <!-- Container wrapper -->
@@ -69,22 +63,26 @@
           <!-- Left links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./carousel.html">Product</a>
+              <a class="nav-link" href="https://www.manvaasam.in/">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="./Gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./feature.html">Community</a>
+              <a class="nav-link" href="">Community</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/job.html">Job </a>
+              <a class="nav-link" href="./Aboutus.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/logistics.html">Logistics</a>
+              <a class="nav-link" href="./job.html">Job </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./logistics.html">Logistics</a>
             </li>
           </ul>
           <!-- Left links -->
@@ -93,23 +91,31 @@
             <button type="button" class="btn btn-link px-3 me-2">
               Login
             </button>
-            <button type="button" class="btn btn-success me-3">
-              Join with us
-            </button>
-            <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
-                class="fab fa-github"></i></a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdU3temNU7_tPoLRX__95b2Tdbw9frmZGswBFFx5AAM4tmZuA/viewform">
+              <button type="button" class="btn btn-success me-3">
+                Join with us
+              </button>
+            </a>
+            <a class="btn btn-dark px-3" href="https://chat.whatsapp.com/CXLKlfhbUxg2eaixVkOGej" role="button"><i
+                class="fab fa-whatsapp"></i></a>
           </div>
         </div>
         <!-- Collapsible wrapper -->
       </div>
       <!-- Container wrapper -->
     </nav>
-    <!-- Navbar -->
   </header>
+
   <section class="gallery">
     <div class="container-fluid p-5">
-      <h1 class="section-headings">Our Gallery</h1>
-      <p>Our precious memories</p>
+      <div class="section-title">
+        <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          Our Gallery
+        </h1>
+        <span data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">Check out the great services
+          Take a look at our precious moments </span>
+      </div>
       <div class="row mt-4">
 
         <div class="item col-sm-6 col-md-4 mb-3">
@@ -252,142 +258,100 @@
     </div>
 
   </section>
-  <footer class="text-center text-lg-start text-white mb-0 text-decoration-none" style="background-color: #c4ffc4">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-between p-4 text-dark" style="background-color: rgba(0, 0, 0, 0.2)">
-      <!-- Left -->
-      <div class="me-5 fw-bold">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
 
-      <!-- Right -->
-      <div>
-        <a href="" class="text-dark me-4">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="text-dark me-4">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="text-dark me-4">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="text-dark me-4">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="text-dark me-4">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="text-dark me-4">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
 
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-dark text-md-start mt-5 text-decoration-none">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase   fw-bold">Manvaasam</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p>
-              Bridging between agriculture and technology with young and talent minds
-            </p>
-          </div>
-          <!-- Grid column -->
+  <!-- Footer -->
+  <footer id="footer">
 
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Products</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p>
-              <a href="#!" class="text-dark">Fruits& Vegetable</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Organic oil</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Books</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Plants</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-1 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Useful links</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p>
-              <a href="#!" class="text-dark ">Logistics</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Gallery</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Jobs</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Communinty</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Contact</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p><i class="fas fa-home mr-3"></i> #2/83,Melkumbu,
-              No.1.kothur(Vill& Post),
-              Kothur, Tamilnadu 635854, India
-            </p>
-            <p><i class="fas fa-envelope mr-3"></i> admin@manvaasam.org </p>
-            <p><i class="fas fa-phone mr-3"></i> 6380091001</p>
-
-          </div>
-          <!-- Grid column -->
-          <div class="col-md-5 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
-            <p class="pt-2">
-              <strong>Sign up for our newsletter</strong>
-            </p>
-            <form action="">
-              <div class="form-outline mb-4">
-                <input type="email" id="form5Example25" class="form-control" />
-                <label class="form-label" for="form5Example25">Email address</label>
-              </div>
-              <button type="submit" class="btn btn-success mb-4">
-                Subscribe
-              </button>
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
         </div>
-        <!-- Grid row -->
       </div>
-    </section>
-    <!-- Section: Links  -->
-
-    <!-- Copyright -->
-    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Manvaasam.com</a>
     </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3 class="text-green">Manvaasam</h3>
+            <p>
+              Kothur, kothur , <br>
+              Tamil Nadu,<br>
+              635854 <br><br>
+              <strong>Phone:</strong>
+              6380091001<br>
+              <strong>Email:</strong> manvaasamtreebank2020@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Feature</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Testimonial</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Products</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Agri apps</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fruits and vegetable</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Plants</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Books</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Others</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Contact with us</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="fa-brands fa-wordpress"></i></a>
+              <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></i></a>
+              <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Manvaasam</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        Designed by <a href="https://manvaasam.com/">Manvaasam</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
   <script>
     $(function () {
       $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
     });
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgy"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 

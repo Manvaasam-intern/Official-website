@@ -1,22 +1,16 @@
-<<<<<<< HEAD
-#moving{
+#moving {
   position: relative;
   animation: myfirst 4s 2;
   animation-direction: alternate;
 }
 
 @keyframes myfirst {
-  50%  {left: 0px; top: 0px;}
-  100%  {left: 300px;top: 0px;}
-=======
-#moving{
-  position: relative;
-  animation: myfirst 4s 2;
-  animation-direction: alternate;
-}
-
-@keyframes myfirst {
-  50%  {left: 0px; top: 0px;}
-  100%  {left: 300px;top: 0px;}
->>>>>>> fd9fe9479d9e0d2091bce324c9ee93e4721c3f49
+  50% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 300px;
+    top: 0px;
+  }
 }

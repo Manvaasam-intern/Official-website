@@ -246,6 +246,47 @@
   color: #0a6315;
 }
 
+@media only screen and (max-width: 480px) {
+  #counter {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  #counter {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #counter {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 959px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .service-details {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .service-details {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .service-details {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 959px) {
+}
 .fa-2x {
   margin: 0 auto;
   float: none;
