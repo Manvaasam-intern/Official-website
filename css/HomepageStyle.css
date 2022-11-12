@@ -40,7 +40,7 @@
     margin-left: -3rem;
   }
   .ombre-interne {
-    padding: 2rem;
+    padding: 20px;
   }
   .carousel-item img {
     height: 20rem;
@@ -58,7 +58,7 @@
     margin-left: -3rem;
   }
   .ombre-interne {
-    padding: 3rem;
+    padding: 30px;
   }
   .carousel-item img {
     height: 30rem;
@@ -76,7 +76,7 @@
     margin-left: -4rem;
   }
   .ombre-interne {
-    padding: 4rem;
+    padding: 40px;
   }
 }
 
@@ -211,41 +211,73 @@
 /************* ABOUT US SECTION END *********/
 
 /************* FEATURE SECTION START *********/
+
 .features {
-  padding: 9.6rem;
-}
-.img-container {
-  position: relative;
+  margin: 100px;
+  padding-top: 80px;
 }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  background-color: rgba(0, 255, 55, 0.521);
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: 0.5s ease;
+.features .features-item + .features-item {
+  margin-top: 100px;
 }
 
-.img-container:hover .overlay {
-  width: 100%;
-  left: 0;
+@media (max-width: 640px) {
+  .features .features-item + .features-item {
+    margin-top: 40px;
+  }
 }
 
-.text {
-  color: #000;
+.features .features-item h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #001973;
+}
+
+.features .features-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features .features-item ul li {
+  padding-bottom: 10px;
+}
+
+.features .features-item ul li:last-child {
+  padding-bottom: 0;
+}
+
+.features .features-item ul i {
   font-size: 20px;
-  font-weight: 500;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+  padding-right: 4px;
+  color: var(--color-primary);
+}
+
+.features .features-item p:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .features {
+    margin: 30px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .features {
+    margin: 45px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .features {
+    margin: 75px;
+  }
+}
+
+@media only screen and (min-width: 959px) {
+  .features {
+    margin: 100px;
+  }
 }
 /************* FEATURE SECTION END *********/
 

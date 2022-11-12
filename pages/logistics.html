@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Logistics - Manvaasam</title>
   <!-- fontawsome links -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -24,9 +26,18 @@
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"></script>
   <!-- custom css file link -->
-  <link href="/css/styles.css" rel="stylesheet">
-</head>
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="../css/LogisticStyle.css" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <style>
+    a{
+      text-decoration: none;
+    }
+  </style>
+</head>
+ 
 <body>
 
   <header>
@@ -37,7 +48,7 @@
       <div class="container">
         <!-- Navbar brand -->
         <a class="navbar-brand me-2" href="#">
-          <img src="./images/manvaasam.jpg" height="50" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
+          <img src="../images/manvaasam.jpg" height="50" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
         </a>
 
         <!-- Toggle button -->
@@ -51,22 +62,22 @@
           <!-- Left links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="https://www.manvaasam.in/" target="_blank">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="./Gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Community</a>
+              <a class="nav-link" href="">Community</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/job.html">Job </a>
+              <a class="nav-link" href="./job.html">Job </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/logistics.html">Logistics</a>
+              <a class="nav-link" href="#">Logistics</a>
             </li>
           </ul>
           <!-- Left links -->
@@ -88,14 +99,40 @@
     </nav>
     <!-- Navbar -->
   </header>
-  <div class="form">
-    <h2>Track your couriers</h2>
-    <p>Manvaasam logistics started in the focus of connecting small village around tamilnadu</p>
-    <form>
-      <input class="p-2 border-pill">
-      <button class="btn btn-success">Track</button>
-    </form>
+
+  <!--Content starts here-->
+  <div class="row container-fluid">
+    <div class="col">
+      <img src="../images/logistics_imgs/log.jpeg" alt="Transport Systems" width="90%" height="90%" class="img-fluid mt-5">
+    </div>
+    <div class="col mt-5" id="content_area">
+        <div class="col-m-6 p-3 mt-5 pb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">TRACK YOUR COURIERS HERE</h5> <br>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Courier ID" aria-label="Courier ID" aria-describedby="button-addon">
+                <button class="btn btn-success" type="button" id="button-addon">TRACK NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-m-6 p-3 mt-5 pb-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">WANT TO BECOME A DEALER IN MANVAASAM LOGISTICS ?</h5> <br>
+              <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+              <a href="https://forms.gle/kanHYMLLnMPuFkLa9" class="btn btn-success">JOIN NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="img-fluid" id="moving">
+          <img src="../images/logistics_imgs/log1-removebg-preview.png" alt="shipment">
+        </div>
+    </div>
   </div>
+
+
   <footer class="text-center text-lg-start text-white mb-0" style="background-color: #555 ; bottom: 0;">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-between p-4" style="background-color: #5cb85c">
@@ -213,6 +250,29 @@
   </footer>
   <!-- Footer -->
 
+
+<script>
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://manvaasam.com/Logistics/track.php");
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        console.log(xhr.status);
+        console.log(xhr.responseText);
+      }};
+
+    let data = `{
+      "Id": 78912,
+      "Customer": "Jason Sweet",
+      "Quantity": 1,
+      "Price": 18.00
+    }`;
+
+    xhr.send(data);
+
+</script>
 </body>
 
 </html>
